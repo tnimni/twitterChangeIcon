@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Icon Changer",
+  "version": "1.0.0",
+  "description": "Change the Twitter icon dynamically.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon48.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://twitter.com/*"],
+    "js": ["content.js"]
+  }]
+}
